@@ -127,7 +127,7 @@ function testTitleLength(str, count) {
 }
 function addBorderOrVideo(str, count) {
 	if(myworks.projects[count].images === "images/victorportfolio.png") {
-		str = str.replace("%dataStyle%", 'style="border: 1px solid black;"');
+		str = str.replace("%dataStyle%", 'style="border: 1px solid black; margin: auto;"');
 	}
 	else {
 		str = str.replace("%dataStyle%", '');	

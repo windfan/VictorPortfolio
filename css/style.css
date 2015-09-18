@@ -17,7 +17,7 @@ body {
 	margin-right: 10px;
 }
 .title-text {
-	font-size: 60px;
+	font-size: 4em;
 }
 .title-background {
 	/*background-color: #99FFCC;*/
@@ -34,8 +34,14 @@ hr {
 h2 {
 	margin-top: 0px;
 }
+h4 {
+	font-size: 1.5em;
+}
 .video-360x200 {
 	width: 360px;
-	max-width: 360px;
+	max-width: 100%;
 	max-height: 200px;
 }
+/*img, embed, object, video {
+	max-width: 100%;
+}*/
