@@ -38,10 +38,13 @@ h4 {
 	font-size: 1.5em;
 }
 .video-360x200 {
-	width: 360px;
-	max-width: 100%;
-	max-height: 200px;
+	max-width: 70%;
+	max-height: 30%;
+	/*max-width: 100%;*/
+	/*max-height: 200px;*/
 }
-/*img, embed, object, video {
-	max-width: 100%;
-}*/
+.pointer {
+	cursor: pointer;
+}
+
+

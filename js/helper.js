@@ -11,8 +11,9 @@ var HTMLmyStoryStart = '<div id="myStory-container"class="col-md-12 myStory"></d
 var HTMLmyStoryPara = '<h4>%data%</h4>';
 var HTMLmyWorksTitleStart = '<div class="col-md-12"><h2>My Works</h2></div>';
 var HTMLmyWorksStart = '<div id="myWorks-container%data%" class="col-md-4 text-center"></div>';
-var HTMLmyWorksImg = '<img class="img-responsive" src="%dataImg%" alt="%dataAlt%" %dataStyle% style="margin: auto;">';
-var HTMLmyWorksTitle = '<h3 class="text-uppercase" %dataStyle% >%dataTitle%</h3>';
+var HTMLmyWorksImg = '<img class="img-responsive pointer" style="margin:auto"  type="button" data-toggle="modal" >';
+var HTMLmyWorksTitle = '<h3 class="text-uppercase">%dataTitle%</h3>';
 var HTMLmyWorksSubtitle = '<h4>%data%</h4>';
-var HTMLmyWorksURL = '<h6>%data%</h6>';
+var HTMLmyWorksURL = '<h6><a href="%data%">%data%</h6>';
 var HTMLvideoSource = '<source src="%data%" type="video/mp4">';
+
