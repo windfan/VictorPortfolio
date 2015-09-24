@@ -209,24 +209,30 @@ for(var workCount = 0; workCount < myworks.projects.length; workCount++) {
 	modalVideo.append('<h2><b>Video Demo</b></h2>');
 	modalVideo.append('<video controls></video><hr>');
 	modalVideo.find('video').addClass("video-360x200");
-
-	var videoId = getID(myworks.projects[workCount].videos, workCount) + "Id";
+	var pureId = getID(myworks.projects[workCount].videos, workCount);
+	var videoId = pureId + "Id";
 	modalVideo.find('video').attr("id", videoId);
 	modalVideo.find('video').append('<source src="' + myworks.projects[workCount].videos + '" type="video/mp4">');
 
+	//4. adding detectors
+	//leaving the modal by clicking out of modal
+	var myVideo = document.getElementById(videoId);
+	$('#' + pureId).mouseleave(function() {
+		myVideo.pause();
+	});
+	//leaving the modal by clicking cancel button
+	$('#' + pureId).find('button').click(function() {
+		myVideo.pause();
+	})
 
 
 	//add the button in modal footer
-	modalEle.find('div.modal-footer').append('<button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVideo('+"'"+ videoId + "'"+ ')">Close</button>');
+	modalEle.find('div.modal-footer').append('<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>');
 }
 function getID(videoPath, count) {
 	var videoPathArray = videoPath.split("/");
 	var videoArray = videoPathArray[1].split(".");
 	return videoArray[0];
-}
-function pauseVideo(id) {
-	var myVideo = document.getElementById(id);
-	myVideo.pause();
 }
 
 
