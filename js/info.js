@@ -78,7 +78,7 @@ var myworks = {
 			"features" : [	"Create a responsive website based on HTML5, CSS3, and Bootstrap.",
 						 	"Using JSON and Javascript to make the website more modulized.",
 						 	"Using jQuery to manipulate HTML elements to be more interactive."], 
-			"videos" : "videos/123.mp4"
+			"videos" : "videos/none.mp4"
 		},
 		{
 			"title" : "SOFTWARE DEFINED NETWORK",
@@ -235,4 +235,4 @@ function getID(videoPath, count) {
 	return videoArray[0];
 }
 
-
+$('#victorportfolio').find('.modal-video').remove();
