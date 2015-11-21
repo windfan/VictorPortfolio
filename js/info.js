@@ -62,6 +62,23 @@ for(var para in bio.mystory) {
 var myworks = {
 	"projects" : [
 		{
+			"title" : "News-Repo",
+			"subtitle" : "A repository for your news.",
+			"dates" : "10/2015-now",
+			"images" : "images/news-repo.png",
+			"images_large" : "images/victorportfolio_large.png",
+			"alt" : "news-repo",
+			"url" : "https://news-repo.firebaseapp.com",
+			"shortStory" : "The reason I started this project at the first place was that my friend asked me about an article online I read before, but somehow I couldn't find it. I spent a whole hour trying to search online and still no luck. That's why I want to create a web app to easily store and organize the news links I want to have.",
+			"features" : [	"*Ongoing project*",
+						 	"Using Angular JS framework to create single page application.",
+						 	"Allow log in using Google Account.",
+						 	"Store and read saved data based on categories through Firebase database.",
+						 	"Website: https://news-repo.firebaseapp.com",
+						 	"Github: https://github.com/windfan/News-Repo"], 
+			"videos" : "videos/none.mp4"
+		},
+		{
 			"title" : "VICTOR | PORTFOLIO",
 			"subtitle" : "Personal Website",
 			"dates" : "09/2015-09/2015",
@@ -236,3 +253,5 @@ function getID(videoPath, count) {
 }
 
 $('#victorportfolio').find('.modal-video').remove();
+$('#news-repo').find('.modal-video').remove();
+$('#myWorks-container1').removeClass('col-md-4').addClass('col-md-12');
